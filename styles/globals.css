@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-dir {
+  direction: ltr;
+}
+
+.section-height {
+  min-height: 90vh;
+}
+.footer-height {
+  height: 10vh;
+}
+
+@layer base {
+  body,
+  html {
+    @apply bg-gray-50 text-black !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-redish;
+  }
+  .btn-filter {
+    @apply mr-2 min-w-[5rem] cursor-pointer rounded-md border-2 border-heading bg-transparent py-2 px-4 text-sm font-bold text-black active:bg-heading active:text-black md:mr-4 lg:mr-8;
+  }
+  .active {
+    @apply bg-heading text-white;
+  }
+}
+
+.imageSpan {
+  background-image: url('/images/services3.jpg');
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+/* Logo Animations */
+.path {
+  position: relative;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 2.5s cubic-bezier(0.165, 0.86, 0.3, 1) alternate infinite;
+  position: relative;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0.95;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Gradiant text  */
+
+.gradientText {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    90deg,
+    rgb(81, 145, 81) 4%,
+    rgba(195, 83, 28, 1) 88%,
+    rgb(81, 145, 81) 4%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
