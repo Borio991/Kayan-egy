@@ -14,7 +14,7 @@ export default function HomePageEquipmentsCard({ title, src, subtitle }) {
         <p>{subtitle}</p>
         <div className="card-actions justify-end">
           <Link href="/equipments">
-            <button className="btn border-0 bg-heading text-white hover:bg-red-500 hover:text-black">
+            <button className="btn border-0 bg-redish text-white hover:bg-red-500 hover:text-black">
               {en ? 'view more' : 'عرض المزيد'}
             </button>
           </Link>

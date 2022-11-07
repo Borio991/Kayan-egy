@@ -8,41 +8,39 @@ export default function Equipments() {
   return (
     <div className="bg-zinc-200 px-4 py-2 sm:px-6 md:py-8 lg:px-12">
       <div className={`mx-auto max-w-7xl  py-2  md:py-8 ${en ? '' : 'rtl'}`}>
-        <Title>{en ? 'Equipment' : 'معدات'}</Title>
+        <Title>{en ? 'Our Projects' : 'احدث مشاريعنا'}</Title>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <HomePageEquipmentsCard
-            src="/images/eq-section/crane2.jpeg"
-            title={en ? 'Crane' : 'رافعات'}
-            subtitle={
+            src="/images/project-section/property-1.jpg"
+            title={
               en
-                ? 'Available in these weights :  25 t, 30 t, 50 t, 100 t, 120 t, 160 t, 220 t, 300 t, 500 t'
-                : 'متوفر بهذه الاوزان : 25 طن، 30 طن، 50 طن، 100 طن، 120 طن، 160 طن، 220 طن، 300 طن، 500 طن'
+                ? 'Bait Al-watan - property 69 - 5th District'
+                : 'بيت الوطن قطعة 69 - الحي الخامس'
             }
           />
           <HomePageEquipmentsCard
-            src="/images/eq-section/jcb-backhoe.jpg"
-            title={en ? 'JCB Backhoe' : 'حفار JCB'}
-          />
-          <HomePageEquipmentsCard
-            src="/images/eq-section/telehandler.jpeg"
-            title={en ? 'Telehandler' : 'ماكينة المناولة'}
-          />
-          <HomePageEquipmentsCard
-            src="/images/equipments/forklift-4.jpeg"
-            title={en ? 'ForkLift' : 'رافعة شوكية'}
-            subtitle={
+            src="/images/project-section/property-2.jpg"
+            title={
               en
-                ? 'Available in these weights :  2.5 t, 3 t, 5 t, 7 t,10 t, 16 t, 20 t, 25 t'
-                : 'متوفر بهذه الاوزان : 2.5 طن، 3 طن، 5 طن، 7 طن، 10 طن، 16 طن، 20 طن، 25 طن'
+                ? 'Bait Al-watan - property 411 - 5th District'
+                : 'بيت الوطن قطعة 411 - الحي الخامس'
             }
           />
           <HomePageEquipmentsCard
-            src="/images/equipments/bobcat1.jpeg"
-            title={en ? 'Bobcat' : 'بوب كات'}
+            src="/images/project-section/property-3.jpg"
+            title={
+              en
+                ? 'Bait Al-watan - property 310 - 5th District'
+                : 'بيت الوطن قطعة 310 - الحي الخامس'
+            }
           />
           <HomePageEquipmentsCard
-            src="/images/eq-section/more.jpeg"
-            title={en ? 'Variety of Equipments' : 'مجموعة كبيرة من المعدات'}
+            src="/images/project-section/property-4.jpg"
+            title={
+              en
+                ? 'Al Andalus 2 - property 110 - 5th District'
+                : 'الاندلس 2 - قطعة 110 - الحي الخامس'
+            }
           />
         </div>
       </div>

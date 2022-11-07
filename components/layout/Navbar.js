@@ -23,7 +23,7 @@ function Nav() {
               <div className="flex-1"></div>
               <div className="mx-auto hidden md:block">
                 <div className="flex items-baseline space-x-4">
-                  <NavLink navName={en ? 'Home4' : 'الرئيسية'} link="/" />
+                  <NavLink navName={en ? 'Home' : 'الرئيسية'} link="/" />
                   <NavLink navName={en ? 'About Us' : 'من نحن'} link="/about" />
                   <NavLink
                     navName={en ? 'Services' : 'خدماتنا'}

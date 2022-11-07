@@ -19,6 +19,7 @@ export default function Contact() {
   const [inputs, setInputs] = useState({
     companyName: '',
     email: '',
+    phone: '',
     message: '',
   })
 
@@ -51,6 +52,7 @@ export default function Contact() {
       setInputs({
         companyName: '',
         email: '',
+        phone: '',
         message: '',
       })
     } else {
@@ -71,7 +73,7 @@ export default function Contact() {
       setStatus((prevStatus) => ({ ...prevStatus, submitting: true }))
       axios({
         method: 'POST',
-        url: 'https://formspree.io/f/xvolylno',
+        url: 'https://formspree.io/f/mbjbqlgj',
         data: inputs,
       }).then((_response) =>
         handleServerResponse(true, 'Thank You , Message sent successfully')
@@ -85,40 +87,37 @@ export default function Contact() {
       <div className={`section-height mx-auto max-w-7xl ${en ? '' : 'rtl'}`}>
         <Title>{en ? 'Contact Us' : 'تواصل معنا'}</Title>
         <div className="mt-12 flex flex-col gap-12  md:flex-row lg:mt-16">
-          <div className="grid w-1/2 grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-12">
+          <div className="grid  w-1/2 gap-2 lg:grid-cols-2 lg:gap-12">
             <ContactItem
               heading={en ? 'Call Us' : 'اتصل بنا'}
-              contactMethod={en ? 'Call Us' : 'جوال'}
-              contactValue={en ? '+966-0530133103' : '966-0530133103+'}
-              contactValue2={en ? '+966-0508597312' : '966-0508597312+'}
+              contactMethod={en ? 'Call Us' : 'هاتف'}
+              contactValue={en ? '01067076076' : '01067076076'}
             />
             <ContactItem
               heading={en ? 'Mail Us' : 'ارسل لنا'}
               contactMethod={en ? 'Email' : 'البريد الالكتروني'}
-              contactValue="Info@najmalmashriq.sa"
-              contactValue2="Sales@najmalmashriq.sa"
-              contactValue3="accounts@najmalmashriq.sa"
+              contactValue="kayan.egy.developments@gmail.com"
             />
             <ContactItem
               heading={en ? 'Our Location' : 'موقعنا'}
               contactMethod={en ? 'Address' : 'العنوان'}
               contactValue={
                 en
-                  ? 'Kingdome of Saudi Arabia - Riyadh'
-                  : 'المملكة العربية السعودية - الرياض'
+                  ? 'Al-Narges 7 - Naguib Al-Rehani street - villa 29'
+                  : 'النرجس 7 - شارع نجيب الريحاني - فيلا 29'
               }
             />
             <ContactItem
-              heading={en ? 'P.O.Box' : 'البريد'}
-              contactMethod={` `}
-              contactValue="14331 "
+              heading={en ? 'Visit our Website' : 'زور موقعنا الالكتروني'}
+              contactMethod={en ? 'Website' : 'الموقع الالكتروني'}
+              contactValue="www.kayan-egy.com"
             />
 
             <div className="flex flex-col"> </div>
           </div>
 
           <form
-            className="flex  w-full flex-col  gap-4 md:w-1/2"
+            className="flex w-full  flex-col gap-4 md:w-1/2"
             onSubmit={handleSubmit}
           >
             <div className="text-center">
@@ -169,6 +168,17 @@ export default function Contact() {
                   className="rounded-3xl border-2 border-white bg-black px-8 py-2 text-white outline-none"
                   onChange={handleOnChange}
                   value={inputs.email}
+                />{' '}
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  maxLength={128}
+                  placeholder={en ? 'Phone' : 'رقم الهاتف'}
+                  className="rounded-3xl border-2 border-white bg-black px-8 py-2 text-white outline-none"
+                  onChange={handleOnChange}
+                  value={inputs.phone}
                 />{' '}
                 <textarea
                   name="message"
