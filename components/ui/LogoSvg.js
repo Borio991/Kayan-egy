@@ -10,7 +10,7 @@ function LogoSvg() {
         <g id="Group_1" dataname="Group 1" transform="translate(-862.4 -644)">
           <g
             id="Logo"
-            transform={en ? 'translate(862.4 660)' : 'translate(940 660)'}
+            transform={en ? 'translate(862.4 660)' : 'translate(862.4 660)'}
           >
             <path
               className={`path`}
