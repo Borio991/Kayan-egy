@@ -27,7 +27,7 @@ function LogoSvg() {
               id="Kayan_Developments"
               dataname="Kayan Developments"
               transform={`${
-                en ? 'translate(190.6 135.11)' : 'translate(780 135.11)'
+                en ? 'translate(190.6 135.11)' : 'translate(190.6 135.11)'
               }`}
               fontSize="66"
               fontFamily="Andalus"
