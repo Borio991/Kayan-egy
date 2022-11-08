@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Page from '../../components/layout/Page'
-import CardEquipments from '../../components/ui/CardEquipments'
-import Filter from '../../components/ui/Filter'
+// import CardEquipments from '../../components/ui/CardEquipments'
+// import Filter from '../../components/ui/Filter'
 import Title from '../../components/ui/Title'
 import { equipmentsData } from '../../data'
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 import LangContext from '../../utils/store'
 import { useContext } from 'react'
 
 export default function Projects() {
   const { en } = useContext(LangContext)
 
-  const [equipmentsList, setEquipmentsList] = useState(equipmentsData)
-  const [filtered, setFiltered] = useState([])
-  const [activeGenre, setactiveGenre] = useState('all')
+  // const [equipmentsList, setEquipmentsList] = useState(equipmentsData)
+  // const [filtered, setFiltered] = useState([])
+  // const [activeGenre, setactiveGenre] = useState('all')
   return (
     <Page title="Equipments">
       <main className="mt-24  max-w-[95vw] ">
