@@ -82,6 +82,15 @@ const ClientLogos: any = () => {
             objectFit="contain"
           />
         </SliderItem>
+        <SliderItem width={250}>
+          <Image
+            src="/images/logos/building.webp"
+            width={250}
+            height={100}
+            alt=""
+            objectFit="contain"
+          />
+        </SliderItem>
       </SliderContainer>{' '}
       {/* <SliderContainer
         className="enabled"
