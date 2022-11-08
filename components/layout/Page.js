@@ -48,14 +48,7 @@ export default function Page({ children, title, description }) {
       <header>
         <Navbar />
       </header>
-      <main>
-        {children}
-        {/* <Link href="https://api.whatsapp.com/send?phone=2001014024745">
-          <a>
-            <h1>WhatsApp</h1>
-          </a>
-        </Link> */}
-      </main>
+      <main>{children}</main>
       <Contact />
       <Footer />
     </>

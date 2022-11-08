@@ -18,8 +18,8 @@ export default function Projects() {
     <Page title="Equipments">
       <main className="mt-24  max-w-[95vw] ">
         <div className={`${en ? '' : 'rtl'} mx-auto max-w-7xl`}>
-          <Title> {en ? 'Equipments' : 'معدات'} </Title>
-          <p className="-mt-6 ">
+          <Title> {en ? 'Our Projects' : 'المشاريع'} </Title>
+          {/* <p className="-mt-6 ">
             {en
               ? 'Huge Variety of Heavy and light Equipments'
               : 'مجموعة كبيرة من المعدات الثقيلة'}
@@ -37,7 +37,7 @@ export default function Projects() {
             {filtered.map((equipment) => (
               <CardEquipments key={equipment.id} {...equipment} />
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </main>
     </Page>

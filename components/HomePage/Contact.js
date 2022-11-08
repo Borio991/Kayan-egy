@@ -210,8 +210,11 @@ export default function Contact() {
               </>
             )}{' '}
           </form>
-          <Link href="https://api.whatsapp.com/send?phone=2001014024745&text= ما هي العروص المتاحه الان ؟ ">
-            <a aria-label="Chat on WhatsApp" className="whatsapp">
+          <Link href="https://api.whatsapp.com/send?phone=2001067076076&text= ما هي العروص المتاحه الان ؟ ">
+            <a
+              aria-label="Chat on WhatsApp"
+              className="fixed bottom-[5%] right-[7%] w-12  md:right-[5%] md:w-20"
+            >
               {' '}
               <img
                 alt="Chat on WhatsApp"
