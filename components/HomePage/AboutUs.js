@@ -17,6 +17,16 @@ export default function AboutUs() {
       <div className="mx-auto max-w-7xl">
         <Title>{en ? 'About Us' : 'من نحن'}</Title>
 
+        <Link href="https://api.whatsapp.com/send?phone=2001014024745">
+          <a aria-label="Chat on WhatsApp">
+            {' '}
+            <img
+              alt="Chat on WhatsApp"
+              src="WhatsAppButtonGreenLarge.svg"
+            />{' '}
+          </a>
+        </Link>
+
         <div className="flex flex-col items-start justify-center md:flex-row">
           <div className="flex-1 md:mt-10">
             <div>
