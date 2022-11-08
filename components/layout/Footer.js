@@ -10,11 +10,7 @@ export default function Footer() {
     <footer className={` ${en ? '' : 'rtl'} bg-zinc-100`}>
       <div className="footer mx-auto max-w-7xl  p-10 px-4  py-2 md:px-6 md:py-8 lg:px-8">
         <div>
-          <Image
-            src={en ? '/images/kayan-logo.svg' : '/images/kayan-logo.svg'}
-            width={320}
-            height={80}
-          />
+          <Image src="/images/footer-logo.png" width={320} height={80} />
         </div>
         <div>
           <span className="footer-title">{en ? 'Services' : 'خدماتنا'}</span>
