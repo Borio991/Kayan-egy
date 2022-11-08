@@ -11,39 +11,16 @@ export default function Footer() {
       <div className="footer mx-auto max-w-7xl  p-10 px-4  py-2 md:px-6 md:py-8 lg:px-8">
         <div>
           <Image
-            src={en ? '/images/logo-EN-black.png' : '/images/logo-AR-black.png'}
+            src={en ? '/images/kayan-logo.svg' : '/images/kayan-logo.svg'}
             width={320}
             height={80}
           />
-          <p className="mt-2 capitalize">
-            <strong className="text-heading">
-              {en ? 'Najm Al Mashriq' : 'نجم المشرق'}
-            </strong>{' '}
-            {en ? 'Contracting Company' : 'للمقاولات'}
-          </p>
-          <p className="capitalize">
-            {' '}
-            {en
-              ? 'Rental Of light and heavy equipment'
-              : ' و تأجير المعدات'}{' '}
-          </p>
         </div>
         <div>
           <span className="footer-title">{en ? 'Services' : 'خدماتنا'}</span>
           <Link href="/equipments">
             <a className="link link-hover">
               {' '}
-              {en ? 'Heavy Equipements Rental' : 'ايجار المعدات الثقيلة'}{' '}
-            </a>
-          </Link>
-          <Link href="/equipments">
-            <a className="link link-hover">
-              {' '}
-              {en ? 'Rental of cranes' : 'ايجار الرافعات'}{' '}
-            </a>
-          </Link>
-          <Link href="/services">
-            <a className="link link-hover">
               {en
                 ? 'General construction of residential building'
                 : 'انشاء المباني السكنية'}
@@ -51,26 +28,25 @@ export default function Footer() {
           </Link>
           <Link href="/services">
             <a className="link link-hover">
-              {' '}
-              {en
-                ? 'Residential and non-residential building renovations'
-                : 'تجديد المباني السكنية وغير السكنية'}
+              {en ? 'Supply Of Construction Materials' : 'توريد مواد البناء'}
             </a>
-          </Link>{' '}
-          <Link href="/services">
+          </Link>
+          <Link href="/equipments">
+            <a className="link link-hover">
+              {en
+                ? 'General construction of Concrete buildings'
+                : 'انشاء المباني الخرسانية'}
+            </a>
+          </Link>
+          <Link href="/equipments">
             <a className="link link-hover">
               {' '}
-              {en
-                ? 'Events and celebrations services'
-                : 'خدمات السباقات الرياضيه'}
+              {en ? 'Finishing works' : 'اعمال التشطيبات'}
             </a>
-          </Link>{' '}
+          </Link>
           <Link href="/services">
             <a className="link link-hover">
-              {' '}
-              {en
-                ? 'Events and celebrations services'
-                : 'خدمات اقامه الفعاليات و الاحتفالات '}
+              {en ? 'Building Permits' : 'تراخيص البناء'}
             </a>
           </Link>
         </div>
@@ -90,8 +66,8 @@ export default function Footer() {
       <div className="bg-zinc-100 text-center md:py-4">
         <p className="text-sm">
           © {new Date().getFullYear()}{' '}
-          <strong className="text-heading">Najm Al Mashriq</strong>. All rights
-          reserved.
+          <strong className="text-greenish">Kayan Developments</strong>. All
+          rights reserved.
         </p>
       </div>
     </footer>
