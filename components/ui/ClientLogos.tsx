@@ -12,7 +12,7 @@ const ClientLogos: any = () => {
       >
         <SliderItem width={250}>
           <Image
-            src="/images/clients/air-royal.png"
+            src="/images/logos/Orascom.png"
             width={250}
             height={100}
             alt=""
@@ -21,7 +21,7 @@ const ClientLogos: any = () => {
         </SliderItem>
         <SliderItem width={250}>
           <Image
-            src="/images/clients/civil-defense.png"
+            src="/images/logos/Ahram.png"
             width={250}
             height={100}
             alt=""
@@ -30,7 +30,7 @@ const ClientLogos: any = () => {
         </SliderItem>
         <SliderItem width={250}>
           <Image
-            src="/images/clients/dakar.png"
+            src="/images/logos/imex.jpg"
             width={250}
             height={100}
             alt=""
@@ -39,7 +39,7 @@ const ClientLogos: any = () => {
         </SliderItem>
         <SliderItem width={250}>
           <Image
-            src="/images/clients/diriyah-season.png"
+            src="/images/logos/Orascom.png"
             width={250}
             height={100}
             alt=""
@@ -48,7 +48,7 @@ const ClientLogos: any = () => {
         </SliderItem>
         <SliderItem width={250}>
           <Image
-            src="/images/clients/saudi-cup.png"
+            src="/images/logos/new-sharm.jpg"
             width={250}
             height={100}
             alt=""
@@ -57,16 +57,7 @@ const ClientLogos: any = () => {
         </SliderItem>
         <SliderItem width={250}>
           <Image
-            src="/images/vision.png"
-            width={250}
-            height={100}
-            alt=""
-            objectFit="contain"
-          />
-        </SliderItem>{' '}
-        <SliderItem width={250}>
-          <Image
-            src="/images/clients/expertise-5.jpg"
+            src="/images/logos/pyramids.png"
             width={250}
             height={100}
             alt=""
@@ -75,15 +66,24 @@ const ClientLogos: any = () => {
         </SliderItem>
         <SliderItem width={250}>
           <Image
-            src="/images/clients/expertise-6.jpg"
+            src="/images/logos/ta3meer.png"
             width={250}
             height={100}
             alt=""
             objectFit="contain"
           />
         </SliderItem>
-      </SliderContainer>
-      <SliderContainer
+        <SliderItem width={250}>
+          <Image
+            src="/images/logos/urbans.jpg"
+            width={250}
+            height={100}
+            alt=""
+            objectFit="contain"
+          />
+        </SliderItem>
+      </SliderContainer>{' '}
+      {/* <SliderContainer
         className="enabled"
         contentWidth={1290}
         initialOffsetX={125}
@@ -214,7 +214,7 @@ const ClientLogos: any = () => {
             objectFit="contain"
           />
         </SliderItem>
-      </SliderContainer>
+      </SliderContainer> */}
     </>
   )
 }

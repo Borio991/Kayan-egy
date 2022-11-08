@@ -13,13 +13,13 @@ export default function TrustedBy() {
             <span className="">{en ? '' : ''}</span>{' '}
             <span className="block">
               {en
-                ? 'Trusted by Biggest Companies and Institutions in Saudi Arabia '
-                : ' موثوق بنا من اكبر الشركات والمؤسسات في السعودية '}
+                ? 'Trusted by Biggest Companies and Institutions  '
+                : ' موثوق بنا من اكبر الشركات والمؤسسات '}
             </span>
             <span className="block">
               {en
-                ? 'We are partners in the implementation of these projects and events.'
-                : ' و نحن شركاء في تنفيذ هذه المشاريع و الفعاليات'}
+                ? 'We are partners in the implementation of these projects '
+                : 'و نحن شركاء في تنفيذ هذه المشاريع'}
             </span>
           </h3>
           <ClientLogos />

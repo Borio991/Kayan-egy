@@ -14,7 +14,7 @@ export default function HomePage() {
       <AboutUs />
       <Services />
       {/* <Services2 /> */}
-      {/* <TrustedBy /> */}
+      <TrustedBy />
       <Equipments />
     </Page>
   )
