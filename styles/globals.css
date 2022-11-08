@@ -82,3 +82,12 @@
     background-position: 200% center;
   }
 }
+
+/* whatapp widget */
+
+.whatsapp {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  max-width: 150px;
+}

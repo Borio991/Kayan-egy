@@ -3,6 +3,7 @@ import axios from 'axios'
 import Title from '../ui/Title'
 import ContactItem from '../ui/ContactItem'
 import LanguageContext from '../../utils/store'
+import Link from 'next/link'
 
 export default function Contact() {
   const { en } = useContext(LanguageContext)
@@ -209,6 +210,15 @@ export default function Contact() {
               </>
             )}{' '}
           </form>
+          <Link href="https://api.whatsapp.com/send?phone=2001014024745">
+            <a aria-label="Chat on WhatsApp" className="whatsapp">
+              {' '}
+              <img
+                alt="Chat on WhatsApp"
+                src="/images/WhatsAppButtonGreenSmall.png"
+              />{' '}
+            </a>
+          </Link>
         </div>
       </div>
     </div>
