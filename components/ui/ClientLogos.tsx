@@ -108,15 +108,6 @@ const ClientLogos: any = () => {
       >
         <SliderItem width={250}>
           <Image
-            src="/images/logos/Orascom.png"
-            width={250}
-            height={100}
-            alt=""
-            objectFit="contain"
-          />
-        </SliderItem>
-        <SliderItem width={250}>
-          <Image
             src="/images/logos/Ahram.png"
             width={250}
             height={100}
@@ -135,7 +126,7 @@ const ClientLogos: any = () => {
         </SliderItem>
         <SliderItem width={250}>
           <Image
-            src="/images/logos/building.webp"
+            src="/images/logos/Orascom.png"
             width={250}
             height={100}
             alt=""
@@ -145,15 +136,6 @@ const ClientLogos: any = () => {
         <SliderItem width={250}>
           <Image
             src="/images/logos/hay2a.jpg"
-            width={250}
-            height={100}
-            alt=""
-            objectFit="contain"
-          />
-        </SliderItem>
-        <SliderItem width={250}>
-          <Image
-            src="/images/logos/pyramids.png"
             width={250}
             height={100}
             alt=""
@@ -169,6 +151,7 @@ const ClientLogos: any = () => {
             objectFit="contain"
           />
         </SliderItem>
+
         <SliderItem width={250}>
           <Image
             src="/images/logos/urbans.jpg"
@@ -178,6 +161,7 @@ const ClientLogos: any = () => {
             objectFit="contain"
           />
         </SliderItem>
+
         <SliderItem width={250}>
           <Image
             src="/images/logos/building.webp"
@@ -189,7 +173,7 @@ const ClientLogos: any = () => {
         </SliderItem>
         <SliderItem width={250}>
           <Image
-            src="/images/logos/hay2a.jpg"
+            src="/images/logos/pyramids.png"
             width={250}
             height={100}
             alt=""
