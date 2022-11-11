@@ -3,7 +3,7 @@ import Title from '../ui/Title'
 import LangContext from '../../utils/store'
 import HomePageEquipmentsCard from '../ui/HomePageEquipmentsCard'
 
-export default function Equipments() {
+export default function Equipments({ url }) {
   const { en } = useContext(LangContext)
   return (
     <div className="bg-zinc-200 px-4 py-2 sm:px-6 md:py-8 lg:px-12">
@@ -11,6 +11,7 @@ export default function Equipments() {
         <Title>{en ? 'Our Projects' : 'احدث مشاريعنا'}</Title>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <HomePageEquipmentsCard
+            url={url}
             src="/images/project-section/property-1.jpg"
             title={
               en
@@ -19,6 +20,7 @@ export default function Equipments() {
             }
           />
           <HomePageEquipmentsCard
+            url={url}
             src="/images/project-section/property-2.jpg"
             title={
               en
@@ -27,6 +29,7 @@ export default function Equipments() {
             }
           />
           <HomePageEquipmentsCard
+            url={url}
             src="/images/project-section/property-3.jpg"
             title={
               en
@@ -35,6 +38,7 @@ export default function Equipments() {
             }
           />
           <HomePageEquipmentsCard
+            url={url}
             src="/images/project-section/property-4.jpg"
             title={
               en

@@ -7,7 +7,7 @@ export default function SliderImg({ src, heading1, heading2, cta }) {
   const { en } = useContext(LangContext)
   return (
     <div className="relative bg-darkColor">
-      <img loading="lazy" src={src} alt="" className="opacity-75" />
+      <img loading="eager" src={src} alt="" className="opacity-75" />
       <div className={`absolute top-[20%] left-[15%]`}>
         <motion.h2
           className="mb-4 text-left font-bold text-textColorDark sm:text-xl md:mb-12 md:text-2xl lg:text-4xl"
