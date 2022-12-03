@@ -2,12 +2,21 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import LangContext from '../../utils/store'
+import Image from 'next/image'
 
 export default function SliderImg({ src, heading1, heading2, cta }) {
   const { en } = useContext(LangContext)
   return (
     <div className="relative bg-darkColor">
-      <img loading="eager" src={src} alt="" className="opacity-75" />
+      <Image
+        loading="eager"
+        src={src}
+        alt="property-slider"
+        className="opacity-75"
+        width="1000px"
+        height="500px"
+        layout="responsive"
+      />
       <div className={`absolute top-[20%] left-[15%]`}>
         <motion.h2
           className="mb-4 text-left font-bold text-textColorDark sm:text-xl md:mb-12 md:text-2xl lg:text-4xl"

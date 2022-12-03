@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useContext } from 'react'
 import LangContext from '../../utils/store'
@@ -7,7 +8,13 @@ export default function HomePageEquipmentsCard({ title, src, subtitle, url }) {
   return (
     <div className="card glass max-h-[560px] max-w-[80]">
       <figure className="h-[65%] max-h-[65%]">
-        <img src={src} alt={title} className="h-full w-full object-cover" />
+        <Image
+          src={src}
+          alt={title}
+          className="h-full w-full object-cover"
+          height="400px"
+          width="440px"
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>

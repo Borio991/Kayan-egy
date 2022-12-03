@@ -4,6 +4,7 @@ import Title from '../ui/Title'
 import ContactItem from '../ui/ContactItem'
 import LanguageContext from '../../utils/store'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Contact() {
   const { en } = useContext(LanguageContext)
@@ -216,9 +217,12 @@ export default function Contact() {
               className="fixed bottom-[5%] right-[7%] w-12  md:right-[5%] md:w-20"
             >
               {' '}
-              <img
+              <Image
                 alt="Chat on WhatsApp"
                 src="/images/whatsapp-logo.png"
+                width="48px"
+                height="48px"
+                layout="responsive"
               />{' '}
             </a>
           </Link>
