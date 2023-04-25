@@ -4,7 +4,6 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import Contact from '../HomePage/Contact'
 import LanguageContext from '../../utils/store'
-import Link from 'next/link'
 
 export default function Page({ children, title, description }) {
   const { en } = useContext(LanguageContext)
@@ -24,7 +23,7 @@ export default function Page({ children, title, description }) {
           name="keywords"
           content={
             en
-              ? 'Properties,5th settlement,constructions,supply construction materials,kayan developments,finishing works'
+              ? 'kayan-egygroup,Properties,5th settlement,constructions,supply construction materials,kayan developments,finishing works'
               : 'بيع عقارات و التجمع الخامس , بيت الوطن , قطعه , حي النرجس , حي الاندلس , اعمال التشطيبات , توريد مواد البناء , تراخيص المباني'
           }
         ></meta>
