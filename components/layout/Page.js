@@ -12,11 +12,11 @@ export default function Page({ children, title, description }) {
       <Head>
         {en ? (
           <title>
-            {title ? `${title} | Kayan Developments` : 'Kayan Developments'}
+            {'Kayan Constructions'}
           </title>
         ) : (
           <title>
-            {title ? `${title} | كيان للتطوير العقاري` : 'كيان للتطوير العقاري'}
+            {'كيان للتطوير العقاري'}
           </title>
         )}
         <meta

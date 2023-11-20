@@ -10,10 +10,10 @@ export default function Footer() {
     <footer className={` ${en ? '' : 'rtl'} bg-zinc-700 text-white`}>
       <div className="footer mx-auto max-w-7xl  p-10 px-4  py-2 md:px-6 md:pt-8 lg:px-8">
         <div className=''>
-          <Image src="/images/kayan-logo.png" width={320} height={240} />
+          <Image src="/images/kayan-logo.png" width={320} height={240} alt='Kayan logo' />
         </div>
         <div>
-          <span className="footer-title">{en ? 'Services' : 'خدماتنا'}</span>
+          <span className="mb-2 text-lg font-bold">{en ? 'Services' : 'خدماتنا'}</span>
           <Link href="/equipments">
             <a className="link link-hover">
               {' '}
@@ -47,7 +47,7 @@ export default function Footer() {
           </Link>
         </div>
         <div>
-          <span className="footer-title">{en ? 'Company' : 'الشركة'}</span>
+          <span className="mb-2 text-lg font-bold">{en ? 'Company' : 'الشركة'}</span>
           <Link href="/">
             <a className="link link-hover">{en ? 'Home' : 'الرئيسية'}</a>
           </Link>

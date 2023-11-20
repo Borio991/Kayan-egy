@@ -9,7 +9,7 @@ export default function ContactItem({
 }) {
   return (
     <div className="mb-8 flex flex-col">
-      <h4 className="text-lg font-bold leading-7 md:text-xl">{heading}</h4>
+      <h3 className="text-lg font-bold leading-7 md:text-xl">{heading}</h3>
       <span className="-mt-1 block min-h-[24px] max-w-full opacity-60">
         {contactMethod}
       </span>
