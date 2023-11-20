@@ -5,6 +5,7 @@ import NavLinksMobile from '../ui/NavLinksMobile'
 import Link from 'next/link'
 import LangContext from '../../utils/store'
 import LogoSvg from '../ui/LogoSvg'
+import Image from 'next/image'
 
 function Nav() {
   const { en, changeLang } = useContext(LangContext)
@@ -13,12 +14,14 @@ function Nav() {
     <div className="fixed top-0 left-0 z-20 w-full bg-darkColor ">
       <nav className={`mx-auto max-w-7xl ${en ? '' : 'rtl'}`}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-24 items-center justify-between ">
+          <div className="flex h-28 items-center justify-between ">
             <div className="flex w-full items-center justify-between ">
               <Link href="/">
-                <div className=" w-[160px] cursor-pointer overflow-hidden lg:w-[360px]">
-                  <LogoSvg />
+                <div className="cursor-pointer overflow-hidden ">
+                  {/* <LogoSvg /> */}
+                  <Image  src="/images/kayan-logo.png" alt="logo" width={200} height={150} />
                 </div>
+                
               </Link>
               <div className="flex-1"></div>
               <div className="mx-auto hidden md:block">
@@ -47,33 +50,7 @@ function Nav() {
                 </div>
               </div>
             </div>
-
-            {/* <div
-              className={`${
-                en ? 'mr-4' : 'ml-4'
-              } h-14 w-28 cursor-pointer overflow-hidden sm:mr-0 md:h-14 md:w-40`}
-            >
-              <a
-                href="https://www.vision2030.gov.sa"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/images/vision.png"
-                  alt="Najm AlMashriq"
-                  className="h-full w-full"
-                />
-              </a>
-            </div> */}
-            {/* mobile menu */}
             <div className="-mr-2 flex gap-4 md:hidden">
-              {/* <button
-                onClick={changeLang}
-                className="btn min-w-[60px] bg-heading text-white hover:bg-heading hover:text-white"
-              >
-                {' '}
-                {en ? 'ع' : 'en'}{' '}
-              </button> */}
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"

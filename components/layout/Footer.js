@@ -7,10 +7,10 @@ export default function Footer() {
   const { en } = useContext(LanguageContext)
 
   return (
-    <footer className={` ${en ? '' : 'rtl'} bg-zinc-100`}>
-      <div className="footer mx-auto max-w-7xl  p-10 px-4  py-2 md:px-6 md:py-8 lg:px-8">
-        <div>
-          <Image src="/images/footer-logo.png" width={320} height={80} />
+    <footer className={` ${en ? '' : 'rtl'} bg-zinc-700 text-white`}>
+      <div className="footer mx-auto max-w-7xl  p-10 px-4  py-2 md:px-6 md:pt-8 lg:px-8">
+        <div className=''>
+          <Image src="/images/kayan-logo.png" width={320} height={240} />
         </div>
         <div>
           <span className="footer-title">{en ? 'Services' : 'خدماتنا'}</span>
@@ -59,7 +59,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="bg-zinc-100 text-center md:py-4">
+      <div className="bg-zinc-700 text-center md:py-4">
         <p className="text-sm">
           © {new Date().getFullYear()}{' '}
           <strong className="text-greenish">Kayan Developments</strong>. All
